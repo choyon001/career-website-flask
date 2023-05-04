@@ -18,14 +18,21 @@
   <div class='container'>
     
     <h1 class='text-center mt-2 mb-4'>SoftTech Careers</h1>
-    <img src="http://career-website.choyon001.repl.co/static/banner.jpg" alt="photo is not loaded"  id='banner' class='img-fluid'>
+    <img src="https://career-website.choyon001.repl.co/static/banner.jpg" alt="photo is not loaded"  id='banner' class='img-fluid'>
 
     <h2 class='text-center mt-2 mb-4'>About SoftTech </h2>
     <p class='lead'>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem velit doloremque ut autem sequi accusamus laboriosam voluptatum dolorum maxime eum quia illo nemo laborum numquam voluptate atque, vero eos! Nostrum laudantium provident commodi atque minus rem similique dolores voluptatum quo.
     </p>
     <h2 class='text-center mt-2 mb-4'>Job Openings</h2>
-    <p>do it later</p>
+
+    <div>
+      {% for job in jobs %}
+
+        {% include 'jobs.html' %}
+        
+      {% endfor %}
+    </div>
     
     <div style='text-align:center; '>
       <button class="btn btn-primary btn-lg">Contact Us</button>
